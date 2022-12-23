@@ -34,7 +34,7 @@ def main():
             z = znew
         else:
             exponent = delta/T
-            if exponent > 100:
+            if np.abs(exponent) > 100:
                 p = 0
             else:
                 p = np.exp(exponent)
